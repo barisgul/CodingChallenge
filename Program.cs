@@ -9,11 +9,12 @@ using System.Collections.Generic;
 namespace CodingChallenge
 {
     class Program
-    { 
+    {
         static void Main(string[] args)
         {
-            string s = "saveChangesInTheEditor";
-            CamelCase.camelcase(s);
+            int n = 11;
+            string password = "#HackerRank";
+            StrongPassword.strongPassword(n, password);
         }
 
     }
