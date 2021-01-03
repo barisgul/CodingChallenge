@@ -11,8 +11,8 @@ namespace CodingChallenge
     { 
         static void Main(string[] args)
         {
-            List<int> grades = new List<int> { 33,35,73, 67, 38, 33 };
-            var result = GradingStudents.gradingStudents(grades);
+            int[] a = new int[] { 7, 1 ,3 ,4 ,1 ,7 };
+            MinimumDistances.minimumDistances(a);
         }
 
     }
