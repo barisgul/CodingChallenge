@@ -15,12 +15,12 @@ namespace CodingChallenge.Hackerrank.Algorithms.A07_AVeryBigSum
             
             //Constraits
             if (1 > count || count > 10)
-                throw new ArgumentOutOfRangeException("Count is out of range");
+                throw new ArgumentOutOfRangeException(nameof(count));
 
             foreach (var item in ar)
             {
                 if (item < 0 || Math.Pow(10, 10) < item)
-                    throw new ArgumentOutOfRangeException("Array item is out of range");
+                    throw new ArgumentOutOfRangeException(nameof(item));
             }
 
             long result = 0;
