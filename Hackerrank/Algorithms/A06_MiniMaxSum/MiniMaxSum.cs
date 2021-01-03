@@ -13,17 +13,26 @@ namespace CodingChallenge.Hackerrank.Algorithms.A06_MiniMaxSum
     {
         public static void miniMaxSum(int[] arr) 
         {
-            List<int> arrList = arr.ToList();
+            //Constraits
+            foreach (var item in arr)
+            {
+                if (item < 1 || Math.Pow(10, 9) < item)
+                    throw new ArgumentOutOfRangeException("Argument is out of range");
+            }
+
+            List<int> arrList = arr.ToList(); 
 
             arrList.Sort();
 
             long minSum = 0, maxSum = 0;
 
+            //collect minSum
             for (int i = 0; i < arrList.Count - 1; i++)
             {
                 minSum += arrList[i];
             }
 
+            //collect maxSum
             for (int i = arrList.Count-1; i > 0; i--)
             {
                 maxSum += arrList[i];

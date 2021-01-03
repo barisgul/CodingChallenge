@@ -12,36 +12,25 @@ namespace CodingChallenge.Hackerrank.Algorithms.A07_AVeryBigSum
         public static long aVeryBigSum(long[] ar) 
         {
             int count = ar.Length;
-            char[] c = ar[0].ToString().ToCharArray(); 
             
+            //Constraits
             if (1 > count || count > 10)
-                throw new Exception("out of range");
-            int zero = 0;
-            long lastIndex = 0;
-            
-            string s = string.Empty;
-            foreach (var item in c)
-            {
-                if (item.Equals('0'))
-                {
-                    zero++;
-                    s += item.ToString();
-                }   
-            }
-
-            if (s.Length.Equals(8))
-                s = s.Remove(s.Length - 1);
+                throw new ArgumentOutOfRangeException("Count is out of range");
 
             foreach (var item in ar)
             {
-                var index = item % 10;
-                lastIndex += index;
+                if (item < 0 || Math.Pow(10, 10) < item)
+                    throw new ArgumentOutOfRangeException("Array item is out of range");
             }
 
-            string temp = count + s + lastIndex;
-            long result = Convert.ToInt64(temp);
+            long result = 0;
 
-            return result ;
+            foreach (var item in ar)
+            {
+                result += item;
+            }
+
+            return result;
         }
     }
 }

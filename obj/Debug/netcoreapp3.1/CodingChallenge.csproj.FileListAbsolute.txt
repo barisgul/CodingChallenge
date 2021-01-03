@@ -9,3 +9,5 @@ C:\Users\baris\source\repos\CodingChallenge\bin\Debug\netcoreapp3.1\CodingChalle
 C:\Users\baris\source\repos\CodingChallenge\bin\Debug\netcoreapp3.1\CodingChallenge.pdb
 C:\Users\baris\source\repos\CodingChallenge\obj\Debug\netcoreapp3.1\CodingChallenge.dll
 C:\Users\baris\source\repos\CodingChallenge\obj\Debug\netcoreapp3.1\CodingChallenge.pdb
+C:\Users\baris\source\repos\CodingChallenge\obj\Debug\netcoreapp3.1\CodingChallenge.csproj.CoreCompileInputs.cache
+C:\Users\baris\source\repos\CodingChallenge\obj\Debug\netcoreapp3.1\CodingChallenge.genruntimeconfig.cache

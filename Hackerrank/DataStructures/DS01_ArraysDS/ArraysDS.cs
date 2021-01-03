@@ -17,12 +17,12 @@ namespace CodingChallenge.Hackerrank.DataStructures.DS01_ArraysDS
             //cosntraits
             if(a.Length < 1 && 1000 > a.Length) 
             {
-                throw new Exception("Array Count is out of range");
+                throw new ArgumentOutOfRangeException("Array Count is out of range");
             }
             foreach (var item in a)
             {
                 if (item < 1 && 10000 > item)
-                    throw new Exception("Array item is out of range");
+                    throw new ArgumentOutOfRangeException("Array item is out of range");
             }
 
             List<int> list = a.ToList();
