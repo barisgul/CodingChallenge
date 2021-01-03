@@ -1,10 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace CodingChallenge.Hackerrank.Algorithms.Strings
 {
-
     #region Example Caller From Main 
     //int n =3;
     // string passwprd = "Ab1",
@@ -12,10 +9,6 @@ namespace CodingChallenge.Hackerrank.Algorithms.Strings
     #endregion
     public class StrongPassword
     {
-        static bool hasNumer;
-        static bool hasLowerCase;
-        static bool hasUpperCase;
-        static bool hasSpecialCharacter;
         public static int strongPassword(int n, string password)
         {
             //Constraints 
@@ -28,17 +21,16 @@ namespace CodingChallenge.Hackerrank.Algorithms.Strings
             string upper_case = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
             string special_characters = "!@#$%^&*()-+";
 
-            hasNumer = CheckCondition(password, numbers);
-            hasLowerCase = CheckCondition(password, lower_case);
-            hasUpperCase = CheckCondition(password, upper_case);
-            hasSpecialCharacter = CheckCondition(password, special_characters);
-             
-            int originalLength = password.Length;
+            bool hasNumer = CheckCondition(password, numbers);
+            bool hasLowerCase = CheckCondition(password, lower_case);
+            bool hasUpperCase = CheckCondition(password, upper_case);
+            bool hasSpecialCharacter = CheckCondition(password, special_characters);
+
             int length = password.Length;
             if (!hasNumer)
                 length++;
             if (!hasLowerCase)
-                 length++;
+                length++;
             if (!hasUpperCase)
                 length++;
             if (!hasSpecialCharacter)
@@ -49,12 +41,12 @@ namespace CodingChallenge.Hackerrank.Algorithms.Strings
                 length++;
             }
 
-            return length-originalLength;
+            return length - password.Length;
         }
 
         private static bool CheckCondition(string password, string contidionStr)
-        {  
-            bool status = password.IndexOfAny(contidionStr.ToCharArray()) >= 0; 
+        {
+            bool status = password.IndexOfAny(contidionStr.ToCharArray()) >= 0;
 
             return status;
         }
