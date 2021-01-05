@@ -11,9 +11,8 @@ namespace CodingChallenge
     class Program
     {
         static void Main(string[] args)
-        {
-            int[] scores = new int[] { 10, 5, 20, 20, 4, 5, 2, 25, 1 };
-            var result = BreakingTheRecords.breakingRecords(scores);
+        { 
+            var result = FunnyString.funnyString("bcxz");
         }
 
     }

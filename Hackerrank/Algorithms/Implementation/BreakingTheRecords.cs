@@ -8,6 +8,7 @@ namespace CodingChallenge.Hackerrank.Algorithms.Implementation
     #region Example Caller From Main 
     //int[] scores = new int[] { 10, 5, 20, 20, 4, 5, 2, 25, 1 };
     //var result = BreakingTheRecords.breakingRecords(scores);
+    #endregion
     public class BreakingTheRecords
     {
         public static int[] breakingRecords(int[] scores)
