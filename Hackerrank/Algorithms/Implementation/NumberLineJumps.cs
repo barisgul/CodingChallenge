@@ -5,8 +5,8 @@ using System.Text;
 namespace CodingChallenge.Hackerrank.Algorithms.Implementation
 {
     #region Example Caller From Main 
-    //int x1=0, int v1 = 3, int x2 = 4, int v2 = 2; 
-    //string result = NumberLineJumps.kangaroo(int x1, int v1, int x2, int v2);
+    //int x1 = 0, v1 = 3, x2 = 4, v2 = 2;
+    //string result = NumberLineJumps.kangaroo(x1, v1, x2, v2);
     #endregion
 
     //https://www.hackerrank.com/challenges/kangaroo/problem
