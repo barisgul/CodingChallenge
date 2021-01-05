@@ -12,9 +12,8 @@ namespace CodingChallenge
     {
         static void Main(string[] args)
         {
-            List<int> a = new List<int> {2,6 };
-            List<int> b = new List<int> {24,36 };
-            var result = BetweenTwoSets.getTotalX(a, b);
+            int[] scores = new int[] { 10, 5, 20, 20, 4, 5, 2, 25, 1 };
+            var result = BreakingTheRecords.breakingRecords(scores);
         }
 
     }
