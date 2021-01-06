@@ -5,6 +5,8 @@ using System.Text;
 
 namespace CodingChallenge.Hackerrank.Algorithms.Strings
 {
+    //https://www.hackerrank.com/challenges/funny-string/problem
+    // var result = FunnyString.funnyString("bcxz");
     public class FunnyString
     {
         public static string funnyString(string s)

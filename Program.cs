@@ -11,8 +11,9 @@ namespace CodingChallenge
     class Program
     {
         static void Main(string[] args)
-        { 
-            var result = FunnyString.funnyString("bcxz");
+        {
+            string[] arr = new string[] { "vtrjvgbj", "mkmjyaeav", "sibzdmsk" };
+            var result = Gemstones.gemstones(arr);
         }
 
     }
