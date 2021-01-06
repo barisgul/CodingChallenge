@@ -14,6 +14,25 @@ namespace CodingChallenge.Hackerrank.Algorithms.Strings
         #endregion
         public static int gemstones(string[] arr)
         {
+            //Constraints
+            if (arr.Length < 1 || 100 < arr.Length)
+                throw new ArgumentOutOfRangeException(nameof(arr));
+
+            foreach (var item in arr)
+            {
+                if(item.Length <1 || 100< item.Length)
+                    throw new ArgumentOutOfRangeException(nameof(item));
+
+                foreach (var c in item)
+                {
+                    if (!Char.IsLower(c))
+                        throw new Exception("letter is not lowercase");
+
+                    if(!IsLatin(c))
+                        throw new Exception("letter is not basic latin case");
+                }
+            }
+
             char[] lettersToCheck = arr[0].ToCharArray();
 
             bool containsLetter = false;
@@ -43,6 +62,11 @@ namespace CodingChallenge.Hackerrank.Algorithms.Strings
             }
 
             return gemstones;
+        }
+
+        private static bool IsLatin(char c) 
+        {
+            return (c >= 'a' && c <= 'z') || (c >= 'A' && c <= 'Z');
         }
     }
 }
